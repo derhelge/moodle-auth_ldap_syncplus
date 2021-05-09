@@ -29,6 +29,10 @@ $string['auth_ldap_syncplusdescription'] = 'This method provides authentication 
                                   wanted fields in Moodle.  For following logins only the username and
                                   password are checked.';
 $string['auth_remove_deletewithgraceperiod'] = 'Suspend internal and fully delete internal after grace period';
+$string['custom_filter_key'] = 'Custom LDAP filter';
+$string['custom_filter'] = 'Optional: Custom LDAP filter; <tt>%u</tt> is substituted by the submitted username (PARAM_ALPHANUM) (<tt>%e</tt> for the email-address (PARAM_EMAIL)) in the login-form. Examples: <tt>(&(|(objectclass=person)(objectclass=user))(|(mail=%e)(userPrincipalName=%e)(userPrincipalName=%u@example.com)(otherIpPhone=%e)))</tt><br />Or for a nested group lookup:<tt>(&(&(|(objectclass=person)(objectclass=user))(|(memberof:1.2.840.113556.1.4.1941:=CN=group_with_subgroups,OU=groups,DC=example,DC=com)))(|(userPrincipalName=%e)(mail=%e)(userPrincipalName=%u@stud.thga.de)))</tt>';
+$string['custom_filter_enabled_key'] = 'Enable custom LDAP filter';
+$string['custom_filter_enabled'] = 'Optional: Enable the custom LDAP filter. <strong>Warning:</strong> Do not use a custom filter when you have no idea what you are doing...<br />';
 $string['nouserentriestosuspend'] = 'No user entries to be suspended';
 $string['privacy:metadata'] = 'The LDAP server (Sync Plus) authentication plugin does not store any personal data.';
 $string['removeuser_graceperiod'] = 'Fully deleting grace period';
